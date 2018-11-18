@@ -22,7 +22,13 @@ let fruitsAndVegetables = [
       {
         id: 101,
         text: 'Orange',
-        isLeaf: true
+        children: [
+          {
+            id: 300,
+            text: 'Orange Sub-Type',
+            isLeaf: true
+          }
+        ]
       },
       {
         id: 102,
