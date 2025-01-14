@@ -134,10 +134,12 @@ module.exports = {
 
         if (canContinue) {
             let item = this.props.item;
-            if (item.isLeaf) {
-                //TODO: Create a event here
-            } else {
-                helper.treeviewItemExpandButtonMouseDown.apply(this, treeview, item);
+            if (item) {
+                if (item.isLeaf) {
+                    //TODO: Create a event here
+                } else {
+                    helper.treeviewItemExpandButtonMouseDown.apply(this, treeview, item);
+                }
             }
         }
     },
